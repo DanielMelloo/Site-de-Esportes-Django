@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title%}CADASTRAR CLIENTE{% endblock %}
+
+
+{% block content %}
+
+<style>
+
+    .errorlist{
+        color: blue;
+        list-style: none;
+    }
+
+</style>
+<div class="page fill-page">
+
+    <div class="mainContainer">
+    
+        <div class="containerInner">
+    
+            <h3>Cadastrar Cliente</h3>
+    
+            <form action="" method="POST" class="forms">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="btn-neon">Cadastrar Cliente</button>
+    
+            </form>
+            <br><p class="textToAlign">Se você já se cadastrou</p>
+            <a href="{%url 'lojaapp:clienteentrar' %}{% if request.GET.next%}?next={{request.GET.next}}{% endif %}">👉🏻clique aqui👈🏻</a>
+        
+        </div>
+    
+    </div>
+
+</div>
+
+
+{% endblock %}

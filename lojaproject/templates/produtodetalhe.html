@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title%}{{produto.titulo}}{% endblock %}
+
+
+{% block content %}
+
+<div class="page fill-page">
+
+    <div class="divBySide">
+
+        <div class="side">
+            <div>
+                <h4 class="textToAlign cardTitle">PRODUTO: {{produto.titulo}}</h4><hr>   
+    
+                <div class="toAlign">
+                    <img src="{{produto.image.url}}" alt="" class="img-fluid" width="350">
+                </div>
+            </div>
+        </div>
+    
+        <div class="side">
+            <div style="margin-top: 6em;"class="centerInColum">
+                <h3 class="cardTitle">{{produto.titulo}} <br>({{produto.visualizacao}} Visulizações)</h3>
+                <p></p>
+                <h4 class="cardTitle">Categoria: {{produto.Categoria}}</h4>
+                <p></p>
+                <h5>De: <strike> R$ {{produto.preco_mercado}}</strike><br><br>Por: R$ {{produto.venda}}</h5>
+                <a style="max-width: 7em;" href="{% url 'lojaapp:addcarro' produto.id %}" class="btnFillContent">Comprar</a><hr>
+                <p class="text-danger">Garantia: {{produto.garantia}}</p>
+                <p class="text-danger">Politica de Devolução: {{produto.return_devolucao}}</p><hr>
+                <p>{{produto.descricao}}</p>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+{% endblock %}

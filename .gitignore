@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+
+settings.py
+
+migrations
+
+cheatsheet
+
+todo.txt

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title%}LOGIN ADMINISTRADOR{% endblock %}
+
+
+{% block content %}
+<style>
+    
+    .errorlist{
+        color: blue;
+        list-style: none;
+    }
+</style>
+<div class="page fill-page">
+    <div class="mainContainer">
+        <div class="containerInner">
+           <h3 >FORMULARIO ADMINISTRADOR</h3>
+           <form class="forms" action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn-neon">Entrar</button>
+            {% if error %}
+            <li style="color:brown; list-style-type: none;">{{error}}</li>
+
+            {% endif %}
+
+           </form>  
+        </div>
+    </div>
+</div>
+
+{% endblock %}
