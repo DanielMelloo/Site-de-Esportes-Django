@@ -1,8 +1,6 @@
 .idea/
 .vscode/
 
-settings.py
-
 migrations
 
 cheatsheet.txt
