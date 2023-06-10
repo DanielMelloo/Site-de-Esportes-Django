@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title%}PAGINA INICIAL{% endblock %}
+{% block title%}página incial{% endblock %}
 
 {% block content %}
 
@@ -66,13 +66,13 @@
             {% if produto_list.has_next %}
 
             <li class="">
-                <a class="prev-nextFooterBar" href="?page={{produto_list.next_page_number}}">Proximo</a>
+                <a class="prev-nextFooterBar" href="?page={{produto_list.next_page_number}}">Próximo</a>
             </li>
 
             {% else %}
 
             <li class="">
-                <a class="prev-nextFooterBar" href="#" tabindex="-1" aria-disabled="true" >Proximo</a>
+                <a class="prev-nextFooterBar" href="#" tabindex="-1" aria-disabled="true" >Próximo</a>
             </li>
 
             {% endif %}

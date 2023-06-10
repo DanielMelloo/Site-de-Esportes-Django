@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 :root {
+=======
+:root{
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
     --clr-neon: #00FFFF;
     --clr-bg: #1d1e1e;
     --bg-gradient: ;
@@ -11,7 +15,11 @@
     --color3: #41B15B;
     --color4: #0e131e;
     --color5: #1d1e1e;
+<<<<<<< HEAD
     --color6: #2a2b2b;
+=======
+    --color6: #2a2b2b;  
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
     --color7: #191f36;
     --color8: #273a59;
     --color9: #e5e5e5;
@@ -46,6 +54,11 @@
     --default-img-size: 200px;
     --default-img-size: 200px;
 
+<<<<<<< HEAD
+=======
+    --default-font: 1.3rem;
+
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 }
 
 body {
@@ -180,7 +193,11 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     justify-items: center;
     align-items: center;
 
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 100vw;
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
     height: 100%;
 }
 
@@ -291,6 +308,11 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     border-radius: 15px;
     padding: 0 4vh 4vh 4vh;
 
+<<<<<<< HEAD
+=======
+    width:100%;
+
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
     
     /* margin: 2vh; */
 }
@@ -304,6 +326,10 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+=======
+    width:100%;
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 
     background: var(--card--clr);
 }
@@ -312,6 +338,10 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     /* margin-bottom: 2vh; */
     color: var(--clr-neon);
     text-decoration: none;
+<<<<<<< HEAD
+=======
+    font-size: var(--default-font);
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 }
 
 .cardTitle:hover{       
@@ -324,7 +354,11 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     display: grid;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     grid-template-columns: 300px 300px 300px;
+=======
+    grid-template-columns: 15vw 15vw 15vw;
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
     gap: 5vh;
 }
 
@@ -760,6 +794,10 @@ form p textarea {
   font-size: 15px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 .footer address {
   font-style: normal;
   color: var(--footerrColorNav);
@@ -810,12 +848,33 @@ form p textarea {
   margin-right: 1.25em;
 }
 
+<<<<<<< HEAD
 .navUl a {
   color: var(--footerColorNav);
 }
 
 
 
+=======
+#navbar a, .dropdown-menu a{
+    color: var(--clr-neon);
+    cursor: pointer;
+}
+
+#navbar a:hover, .dropdown-menu a:hover{
+    background-color: var(--clr-neon);
+    color: var(--clr-bg);
+}
+
+/* .navbar-bs2{
+
+
+} */
+
+.dropdown-menu {
+    background-color: var(--clr-bg);
+}
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 
 @media screen and (min-width: 40.375em) {
   .footerNav>* {
@@ -829,4 +888,12 @@ form p textarea {
   .footerNav {
     flex: 2 0px;
   }
+<<<<<<< HEAD
+=======
+}
+
+* {
+    text-transform: lowercase;
+    text-transform: capitalize;
+>>>>>>> 8e86fa3f096aef49219942e7f0bf5efa05226b0a
 }

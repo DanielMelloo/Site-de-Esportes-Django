@@ -10,7 +10,7 @@
 
         <div class="side">
             <div>
-                <h4 class="textToAlign cardTitle">PRODUTO: {{produto.titulo}}</h4><hr>   
+                <h4 class="textToAlign cardTitle">Produto: {{produto.titulo}}</h4><hr>   
     
                 <div class="toAlign">
                     <img src="{{produto.image.url}}" alt="" class="img-fluid" width="350">
@@ -27,7 +27,7 @@
                 <h5>De: <strike> R$ {{produto.preco_mercado}}</strike><br><br>Por: R$ {{produto.venda}}</h5>
                 <a style="max-width: 7em;" href="{% url 'lojaapp:addcarro' produto.id %}" class="btnFillContent">Comprar</a><hr>
                 <p class="text-danger">Garantia: {{produto.garantia}}</p>
-                <p class="text-danger">Politica de Devolução: {{produto.return_devolucao}}</p><hr>
+                <p class="text-danger">Política de Devolução: {{produto.return_devolucao}}</p><hr>
                 <p>{{produto.descricao}}</p>
             </div>
         </div>
