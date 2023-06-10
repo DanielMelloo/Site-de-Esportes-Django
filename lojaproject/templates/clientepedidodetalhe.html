@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% load humanize %}
-{% block title%}DETALHE DO PEDIDO{% endblock %}
+{% block title%}Detalhe do Pedido{% endblock %}
 
 
 {% block content %}
 <div class="page fill-page">
     <div class="mainContainer">
         <div class="tableBox">
-            <h3 class="cardTitle">Detalhes Do Pedido</h3>
+            <h3 class="cardTitle">Detalhes do Pedido</h3>
             <hr>
             <p><spam class= "font-weight-bold">Pedido ID: </spam>{{pedido_obj.id}}</p>
             <p><spam class= "font-weight-bold">Status do Pedido: </spam>{{pedido_obj.pedido_status}}</p>
@@ -21,7 +21,7 @@
             <table  class="tableCar">
                 <thead>
                     <tr class="trTable">
-                        <th>Codigo</th>
+                        <th>Código</th>
                         <th>Item</th>
                         <th>Avaliação</th>
                         <th>Quantidade</th>
