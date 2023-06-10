@@ -43,15 +43,21 @@
     --default-padding: 0.5em 1em 0.5em 1em;
     --default-margin: 3em 0.25em 3em 0.25em;
 
+<<<<<<< HEAD
     --default-img-size: 200px;
+=======
+    --default-img-size: 100%;
+>>>>>>> cd67b8547b594ef373be21173b7be072ee9eeca5
 
     --default-font: 1.3rem;
+    
 
 }
 
 body {
     background-color: var(--clr-bg);
     color: var(--light-color);
+    max-width: 100vw;
 
     /* background: rgb(29,30,30);
 background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, rgba(23,78,78,1) 75%, rgba(23,78,78,1) 80%, rgba(23,78,78,1) 85%, rgba(19,108,108,1) 100%); */
@@ -181,7 +187,11 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     justify-items: center;
     align-items: center;
 
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 99vw;
+>>>>>>> cd67b8547b594ef373be21173b7be072ee9eeca5
     height: 100%;
 }
 
@@ -412,8 +422,10 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
 }
 
 .cardBox img {
-    width: var(--default-img-size);
-    height: var(--default-img-size);
+    /* width: var(--default-img-size);
+    height: var(--default-img-size); */
+    width: 100%;
+    height: 100%;
 
     object-fit: contain;
 }
@@ -824,6 +836,8 @@ form p textarea {
 #navbar a:hover, .dropdown-menu a:hover{
     background-color: var(--clr-neon);
     color: var(--clr-bg);
+    
+    color: green;
 }
 
 /* .navbar-bs2{
@@ -849,7 +863,57 @@ form p textarea {
   }
 }
 
+@media (max-width: 767px) {
+    :root {
+        --default-font: 0.7rem;
+    }
+
+    h1{
+        font-size: medium;
+    }
+
+    .rowBy3{
+        grid-template-columns: 27vw 27vw 27vw;
+        gap: 1.5vh;
+    }
+
+    .cardBoxOuter {
+
+        border-radius: 10px;
+        padding: 0 1.5vh 1.5vh 1.5vh;
+    
+        width:100%;
+    }
+
+    .textToAlign a{       
+        margin: 2vh 0 2vh 0;
+        font-size: 0.65rem;
+    }
+
+    .cardBox > p, .btn-neon {
+        font-size: 0.8rem;
+    }
+
+    .prev-nextFooterBar, .activePageSelectorFooter, .pageSelectorFooter{
+        font-size: var(--default-font);
+    }
+
+    .ulPageSelectorFooter{
+        padding: 0;
+    }
+
+  }
+  
+  /* Media query para telas ainda maiores */
+  @media (max-width: 1023px) {
+    /* :root{
+        
+    } */
+  }
+
+  
+
 * {
-    text-transform: lowercase;
+    /* display: none; */
     text-transform: capitalize;
 }
