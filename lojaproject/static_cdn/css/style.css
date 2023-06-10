@@ -43,11 +43,7 @@
     --default-padding: 0.5em 1em 0.5em 1em;
     --default-margin: 3em 0.25em 3em 0.25em;
 
-<<<<<<< HEAD
-    --default-img-size: 200px;
-=======
     --default-img-size: 100%;
->>>>>>> cd67b8547b594ef373be21173b7be072ee9eeca5
 
     --default-font: 1.3rem;
     
@@ -187,11 +183,7 @@ background: linear-gradient(190deg, rgba(29,30,30,1) 46%, rgba(25,62,62,1) 70%, 
     justify-items: center;
     align-items: center;
 
-<<<<<<< HEAD
-    width: 100vw;
-=======
     width: 99vw;
->>>>>>> cd67b8547b594ef373be21173b7be072ee9eeca5
     height: 100%;
 }
 
